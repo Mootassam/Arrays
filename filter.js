@@ -57,6 +57,20 @@ console.log(filtermale);
 // Get all female characters
 const filterfemale = characters.filter((filter) => filter.gender === "female");
 console.log(filterfemale);
+// splice 
+
+var data = [1,2,3,4,5];
+
+function moveItem(from, to) {
+  // remove `from` item and store it
+  var f = data.splice(from, 1)[0];
+  // insert stored item into position `to`
+  data.splice(to, 0, f);
+}
+
+moveItem(0, 2);
+
+console.log(data);
 
 // SORT
 
